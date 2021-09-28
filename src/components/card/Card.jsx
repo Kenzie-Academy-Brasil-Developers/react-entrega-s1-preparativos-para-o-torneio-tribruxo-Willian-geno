@@ -23,6 +23,7 @@ function Card (props) {
 
     return(
         <div className = "conteiner">
+                <h1>Sorteio do Torneio Tribruxo</h1>
             <ul>
                 {hauseGryffindor[Math.round(Math.random()*4)] && <RenderCard 
                 houseOne = {hauseGryffindor[Math.round(Math.random()*4)]}
@@ -30,7 +31,7 @@ function Card (props) {
                 houseTree = {hauseHufflepuffandRavenclaw[Math.round(Math.random()*2)]}
                 />}
             </ul>
-            <button onClick = {filterPersons} >aqui</button>
+            <button onClick = {filterPersons} >Sorteio</button>
         </div>
     )
 }

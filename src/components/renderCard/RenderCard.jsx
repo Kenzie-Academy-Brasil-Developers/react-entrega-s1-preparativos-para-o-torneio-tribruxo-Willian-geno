@@ -5,22 +5,22 @@ function RenderCard (props) {
     return(
         <div className = "divPerson">
             <li className = "cardPerson">
-                <div><img className = "imgPerson" src = {props.houseOne.image}/></div>
-                <div className = "personName">{props.houseOne.name}</div> 
-                <div>{props.houseOne.house}</div>
-                <div>{props.houseOne.ancestry}</div>
+                <img className = "imgPerson" src = {props.houseOne.image}/>
+                <h3 className = "personName">{props.houseOne.name}</h3> 
+                <h4>{props.houseOne.house}</h4>
+                <h4>{props.houseOne.ancestry}</h4>
             </li>
             <li className = "cardPerson" >
-                <div> <img className = "imgPerson" src = {props.houseTwo.image}/></div>
-                <div className = "personName" >{props.houseTwo.name}</div> 
-                <div>{props.houseTwo.house}</div>
-                <div>{props.houseTwo.ancestry}</div>
+                <img className = "imgPerson" src = {props.houseTwo.image}/>
+                <h3 className = "personName" >{props.houseTwo.name}</h3> 
+                <h4>{props.houseTwo.house}</h4>
+                <h4>{props.houseTwo.ancestry}</h4>
             </li>
             <li className = "cardPerson" >
-                <div> <img className = "imgPerson" src ={props.houseTree.image}/> </div>
-                <div className = "personName" >{props.houseTree.name}</div> 
-                <div>{props.houseTree.house}</div>
-                <div>{props.houseTree.ancestry}</div>
+                <img className = "imgPerson" src ={props.houseTree.image}/>
+                <h3 className = "personName" >{props.houseTree.name}</h3> 
+                <h4>{props.houseTree.house}</h4>
+                <h4>{props.houseTree.ancestry}</h4>
             </li>
         </div>
         )
